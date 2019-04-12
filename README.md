@@ -45,3 +45,6 @@ https://www.npmjs.com/package/webaudiofont
 
 android synth tutorial
 https://codelabs.developers.google.com/codelabs/making-waves-1-synth/#0
+
+Ble and react native tutorial
+https://blog.expo.io/so-you-want-to-build-a-bluetooth-app-with-react-native-and-expo-6ea6a31a151d
