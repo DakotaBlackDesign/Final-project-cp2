@@ -140,22 +140,31 @@ void loop(void)
  Serial.print("z = ");
  Serial.println(event.orientation.z);
  
-  int cc2a = map((float)event.orientation.x,0,360,0,127);
+ 
+ //these are the ranges of the bno sensor data remapped to midi CC range 0-127
+  int cc2a = map((float)event.orientation.x,0,360,0,127);  
   int cc3a = map((float)event.orientation.y,-90,90,0,127);
   int cc4a = map((float)event.orientation.z,-180,180,0,127);
+ //the problem is that some of the axis don't smoothly transition as they rotate and 
+ //will jump back to 0 when they have completed a rotation
+ //this causes bad sounds.
 */
+   
  int cc2a = (float)event.orientation.x;
  int cc3a = (float)event.orientation.y;
  int cc4a = (float)event.orientation.z;
 
+ // make cc2a wrap smoothly  
  if (cc2a > 180){
   cc2a = 360 - cc2a;
  }
-
+   
+ // make cc4a wrap smoothly  
  if (cc4a < 0){
   cc4a = cc4a * -1;
  }
 
+ //remap to midi CC range, effectivley 180degree of rotation in any axis is 0-127, the next 180degree is 127-0 so transitions are always smooth
  cc2a = map(cc2a,0,180,0,127);
  cc3a = map(cc3a,-90,90,0,127);
  cc4a = map(cc4a,0,180,0,127);
