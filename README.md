@@ -1,20 +1,14 @@
-# Aphos App
+# Aphos
 
-A mobile interface for generating sound in responce to a users breathing
+A mobile Theraputic interdface that generates sound in responce to a users breathing
 
 ## Summary
 
-To accompany My thesis project The Aphos App will provide a simple graphical interface on an android device. 
-I have hardware that interprets inhaling and exhaling into MIDI BLE. Thae App will interpret the midi and via a synth generate sound. User input will be collected through the accelerometer and a touch interface to modulate this sound and send it via bluetooth to headphones. 
-
+User input will be collected through an accelerometer and a breathe detection belt to trigger a synth over Midi BLE.
 
 ## Component Parts
 
-the hardware is finished and working as an arduino prototype. the project will only be the App. 
-
-## Challenges
-
-I would like to build the app using Jasvascript/ react to leverage my existing knowledge. the challenge will be adapting these languages to run on a mobile device. 
+the hardware consists of 2 feather boards, 1 absolute orientation sensor, and 1 knit strech sensor. 
 
 ## Timeline
 
@@ -29,22 +23,8 @@ I would like to build the app using Jasvascript/ react to leverage my existing k
 - Week 4: Combine user inputs with synth!
 - Week 5: Present!
 
-## References and link
-
-react native documentation
-https://facebook.github.io/react-native/docs/tutorial
-
-react native sensor input example
-https://medium.com/react-native-training/using-sensors-in-react-native-b194d0ad9167
-
-midi in react
-https://www.npmjs.com/package/midi-sounds-react
-
-sample based synthesis
-https://www.npmjs.com/package/webaudiofont
-
-android synth tutorial
-https://codelabs.developers.google.com/codelabs/making-waves-1-synth/#0
-
-Ble and react native tutorial
-https://blog.expo.io/so-you-want-to-build-a-bluetooth-app-with-react-native-and-expo-6ea6a31a151d
+## References and links 
+http://www.kobakant.at/DIY/?p=1762
+http://www.music-software-development.com/midi-tutorial.html
+https://www.nyu.edu/classes/bello/FMT_files/9_MIDI_code.pdf
+https://www.arduino.cc/en/Tutorial/MidiDevice
