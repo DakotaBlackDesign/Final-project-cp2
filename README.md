@@ -23,8 +23,19 @@ the hardware consists of 2 feather boards, 1 absolute orientation sensor, and 1 
 - Week 4: Combine user inputs with synth!
 - Week 5: Present!
 
+## Outcomes 
+
+Thesis.ino is the orientation controller code
+Thesis_4.ino is the breathe belt code
+
 ## References and links 
+
 http://www.kobakant.at/DIY/?p=1762
+
 http://www.music-software-development.com/midi-tutorial.html
+
 https://www.nyu.edu/classes/bello/FMT_files/9_MIDI_code.pdf
+
 https://www.arduino.cc/en/Tutorial/MidiDevice
+
+
