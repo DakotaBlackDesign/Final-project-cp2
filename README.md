@@ -26,6 +26,7 @@ the hardware consists of 2 feather boards, 1 absolute orientation sensor, and 1 
 ## Outcomes 
 
 Thesis.ino is the orientation controller code
+
 Thesis_4.ino is the breathe belt code
 
 ## References and links 
